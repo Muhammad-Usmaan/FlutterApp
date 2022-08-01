@@ -1,26 +1,23 @@
-
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
 
-  final int nu = 23;
-  final String name = "mani";
-
   @override
+  final String name = "HAJI";
+  final double no = 3;
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: Center(child: Text("Flutter")),
+      appBar: AppBar(
+        title: Center(
+          child: Text("Flutter/Dart")),
+      ),
+      drawer: Drawer(),
+      body: Center(
+        child: Container(
+          child: Text("Welcome to $name MEHBOOB'S App $no"),
         ),
-        drawer: Drawer(),
-        body: Center(
-          child: Container(
-            child: Text("Home Page of $name $nu"),
-          ),
-        ),
-        floatingActionButton: FloatingActionButton(onPressed: ((null))
-        )
-        );
+      ),
+    );
   }
 }
