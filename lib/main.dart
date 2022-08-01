@@ -9,11 +9,13 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    int nu = 29;
+    String name = "mani";
     return MaterialApp(
       home: Material(
           child: Center(
         child: Container(
-          child: Text("Home Page"),
+          child: Text("Home Page of $name $nu"),
         ),
       )),
     );
