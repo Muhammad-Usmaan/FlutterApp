@@ -1,18 +1,28 @@
+import 'dart:html';
+
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
- 
-    final int nu = 29;
-    final String name = "mani";
+
+  final int nu = 23;
+  final String name = "mani";
 
   @override
   Widget build(BuildContext context) {
-    return Material(
-          child: Center(
-        child: Container(
-          child: Text("Home Page of $name $nu"),
+    return Scaffold(
+        appBar: AppBar(
+          title: Center(child: Text("Flutter")),
         ),
-      ));
+        drawer: Drawer(),
+        body: Center(
+          child: Container(
+            child: Text("Home Page of $name $nu"),
+          ),
+        ),
+        floatingActionButton: FloatingActionButton(onPressed: ((null))
+        )
+        );
   }
 }
