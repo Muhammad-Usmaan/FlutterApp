@@ -27,7 +27,7 @@ class HomePage extends StatelessWidget {
       ),
       //floating action button
       floatingActionButton: FloatingActionButton(onPressed: () {
-        Navigator.pushNamed(context, MyRoutes.loginRoute);
+        Navigator.pushNamed(context, MyRoutes.LoginRoute);
       }),
     );
   }
