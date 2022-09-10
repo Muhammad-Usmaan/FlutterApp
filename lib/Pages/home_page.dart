@@ -5,7 +5,6 @@ class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
 
   @override
-  final String name = "HAJI";
   final double no = 3;
   Widget build(BuildContext context) {
     return Scaffold(
@@ -20,8 +19,11 @@ class HomePage extends StatelessWidget {
       body: Center(
         child: Container(
           child: Text(
-            "Welcome to $name MEHBOOB'S App $no",
-            style: TextStyle(fontSize: 20, color: Colors.indigo),
+            "Welcome to my_app $no",
+            style: TextStyle(
+                fontSize: 25,
+                color: Colors.blueAccent,
+                fontWeight: FontWeight.bold),
           ),
         ),
       ),
