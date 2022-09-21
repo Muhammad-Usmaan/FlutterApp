@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:my_app/utility/routes.dart';
 
+import '../Widgets/drawer.dart';
+
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
 
@@ -14,7 +16,7 @@ class HomePage extends StatelessWidget {
         style: TextStyle(fontSize: 27),
       )),
       //Drawer
-      drawer: Drawer(),
+      drawer: MyDrawer(),
       // Main homePage Body
       body: Center(
         child: Container(
