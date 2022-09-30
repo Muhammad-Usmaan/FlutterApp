@@ -13,7 +13,9 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
           title: Text(
         "Flutter/Dart",
-        style: TextStyle(fontSize: 27),
+        style: TextStyle(
+            fontSize: 27, color: Colors.black, fontWeight: FontWeight.bold),
+        textAlign: TextAlign.center,
       )),
       //Drawer
       drawer: MyDrawer(),
@@ -22,10 +24,7 @@ class HomePage extends StatelessWidget {
         child: Container(
           child: Text(
             "Welcome to my_app $no",
-            style: TextStyle(
-                fontSize: 25,
-                color: Colors.blueAccent,
-                fontWeight: FontWeight.bold),
+            style: TextStyle(fontSize: 25),
           ),
         ),
       ),
